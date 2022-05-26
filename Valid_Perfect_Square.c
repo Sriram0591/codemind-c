@@ -11,8 +11,7 @@ int main()
             if((i*i)==x)
             {
                 c=1;
-                printf("True
-");
+                printf("True");
                 break;
             }
             else
@@ -22,8 +21,7 @@ int main()
         }
         if(c==0)
         {
-            printf("False
-");
+            printf("False");
         }
         n--;
     }
