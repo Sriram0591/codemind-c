@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main()
+{
+    int arr[100],n,i,p,count=0,temp=10,c=0;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+        p=arr[i];
+        while(p!=0)
+        {
+            count++;
+            p=p/10;
+        }
+        if(count<temp)
+        {
+            temp=count;
+        }
+        count=0;
+    }
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+        p=arr[i];
+        while(p!=0)
+        {
+            count++;
+            p=p/10;
+        }
+        if(count==temp)
+        {
+            c++;
+        }
+        count=0;
+    }
+    printf("%d",c);
+}
